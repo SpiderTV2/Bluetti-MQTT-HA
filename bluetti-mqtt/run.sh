@@ -1,7 +1,9 @@
 #!/usr/bin/with-contenv bashio
 
-# Starte bluetti-mqtt mit deinen Credentials
-bluetti-mqtt --cloud \
-    --username "info@cw-bauservice.de" \
-    --password "Th!mo001" \
-    --mqtt-host "mqtt://127.0.0.1"
+# Lese die Konfigurationswerte aus dem Add-on aus
+USERNAME=$(bashio::config 'username')
+PASSWORD=$(bashio::config 'password')
+MQTT_HOST=$(bashio::config 'mqtt_host')
+
+# Starte bluetti-mqtt mit den Werten aus der UI
+/usr/local/bin/bluetti-mqtt --cloud --username "$USERNAME" --password "$PASSWORD" --mqtt-host "$MQTT_HOST"
