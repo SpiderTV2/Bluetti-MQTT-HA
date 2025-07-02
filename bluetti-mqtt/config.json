@@ -8,5 +8,6 @@
   "options": {},
   "schema": {},
   "arch": ["armv7", "arm64", "amd64"],
+  "icon": "icon.png",
   "image": null
 }
