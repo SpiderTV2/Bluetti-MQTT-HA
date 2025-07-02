@@ -7,8 +7,10 @@ RUN apk add --no-cache python3 py3-pip
 # Install bluetti-mqtt
 RUN pip3 install --break-system-packages bluetti_mqtt
 
-# Copy run script
-COPY /etc/services.d/bluetti-mqtt /etc/services.d/bluetti-mqtt
-RUN chmod +x /etc/services.d/bluetti-mqtt
+# Copy the s6 service folder with run script
+COPY etc/services.d/bluetti-mqtt /etc/services.d/bluetti-mqtt
+
+# Make sure the run script is executable
+RUN chmod +x /etc/services.d/bluetti-mqtt/run
 
 CMD [ "/init" ]
