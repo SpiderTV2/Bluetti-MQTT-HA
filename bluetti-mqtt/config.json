@@ -5,8 +5,16 @@
   "description": "Publishes Bluetti data via MQTT using the Bluetti Cloud API.",
   "startup": "services",
   "boot": "auto",
-  "options": {},
-  "schema": {},
+  "options": {
+    "username": "",
+    "password": "",
+    "mqtt_host": "127.0.0.1"
+  },
+  "schema": {
+    "username": "str",
+    "password": "str",
+    "mqtt_host": "str"
+  },
   "arch": ["armv7", "arm64", "amd64"],
   "icon": "icon.png",
   "image": null
