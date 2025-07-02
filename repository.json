@@ -1,5 +1,5 @@
 {
-  "name": "SpiderTV2 bluetti-mqtt",
+  "name": "Cloud BLUETTI-MQTT",
   "url": "https://github.com/SpiderTV2/Bluetti-MQTT-HA",
-  "maintainer": "SpiderTV2"
+  "maintainer": "SpiderTV"
 }
