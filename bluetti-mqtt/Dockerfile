@@ -11,4 +11,4 @@ RUN pip3 install --break-system-packages bluetti_mqtt
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-CMD [ "/run.sh" ]
+CMD [ "/init" ]
