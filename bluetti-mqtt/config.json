@@ -1,6 +1,6 @@
 {
   "name": "Bluetti MQTT",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "slug": "bluetti_mqtt",
   "description": "Publishes Bluetti data via MQTT using the Bluetti Cloud API.",
   "startup": "services",
