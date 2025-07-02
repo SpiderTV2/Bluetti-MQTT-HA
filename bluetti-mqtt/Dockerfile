@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 RUN apk add --no-cache python3 py3-pip
 
 # Install bluetti-mqtt
-RUN pip3 install bluetti-mqtt
+RUN pip3 install git+https://github.com/warhammerkid/bluetti_mqtt
 
 # Copy run script
 COPY run.sh /run.sh
