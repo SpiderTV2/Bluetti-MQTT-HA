@@ -8,7 +8,7 @@ RUN apk add --no-cache python3 py3-pip
 RUN pip3 install --break-system-packages bluetti_mqtt
 
 # Copy run script
-COPY run.sh /run.sh
-RUN chmod +x /run.sh
+COPY etc/services.d/bluetti-mqtt/run /etc/services.d/bluetti-mqtt/run
+RUN chmod +x /etc/services.d/bluetti-mqtt/run
 
 CMD [ "/init" ]
