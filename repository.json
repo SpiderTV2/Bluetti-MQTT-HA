@@ -1,5 +1,5 @@
 {
-  "name": "My Custom Home Assistant Add-ons",
-  "url": "https://github.com/SpiderTV2/BLUETTI-MQTT-HA",
-  "maintainer": "SpiderTV"
+  "name": "SpiderTV2 bluetti-mqtt",
+  "url": "https://github.com/SpiderTV2/Bluetti-MQTT-HA",
+  "maintainer": "SpiderTV2"
 }
