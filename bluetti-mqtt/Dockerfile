@@ -13,4 +13,5 @@ COPY etc/services.d/bluetti-mqtt /etc/services.d/bluetti-mqtt
 # Make sure the run script is executable
 RUN chmod +x /etc/services.d/bluetti-mqtt/run
 
+# Start s6-overlay init system
 CMD [ "/init" ]
