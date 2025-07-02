@@ -3,7 +3,6 @@ FROM $BUILD_FROM
 
 # Install prerequisites
 RUN apk add --no-cache python3 py3-pip
-RUN apk add --no-cache bashio
 
 # Install bluetti-mqtt
 RUN pip3 install bluetti-mqtt
